@@ -2,7 +2,7 @@
 
 const Discord = require("discord.js")
 const client = new Discord.Client();
-const { prefix } = require('./config.json')
+const { token, prefix } = require('./config.json')
 const fs = require('fs')
 const randomPuppy = require("random-puppy")
 const ping = require('minecraft-server-util')
@@ -162,7 +162,7 @@ client.on('message', async message => {
 
 // Login Token (Varies from individual to individual)
 
-client.login(process.env.token);
+client.login("Enter your bot token here");
 
 
 
